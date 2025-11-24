@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>나의 첫 웹페이지</title>
+</head>
+<body>
+    <h1>안녕하세요! 저는 한다인입니다.</h1>
+    <p>제가 좋아하는 음식은 떡볶이, 치킨, 피자예요!</p>
+</body>
+</html>
+<h2>제가 좋아하는 동물이에요!</h2>
+<img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131" width="300">
+<h1>나의 소개</h1>
+<p>이름: 한다인</p>
+<p>학교: 푸른솔중학교</p>
+<p>취미: 마인크래프트, 쿠키런</p>
+
+<h2>내가 좋아하는 사진</h2>
+<img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" width="300">
+<h2>내가 좋아하는 게임</h2>
+<ul>
+  <li>마인크래프트</li>
+  <li>로블록스</li>
+  <li>배틀그라운드</li>
+</ul>
+<script>
+     name = "한다인";
+    let age = 15;
+    let school = "푸른솔중학교";
+
+    alert("안녕하세요! 저는 " + name + "입니다.");
+    alert("저는 " + school + "에 다니고 있고요,");
+    alert("제 나이는 " + age + "살이에요!");
+</script>
+<button onclick="introduce()">나를 소개해줘!</button>
+<script>
+    function introduce() {
+        let nickname = "한다인";
+        let food = "떡볶이";
+        let game = "마인크래프트";
+
+        alert("저는 " + nickname + "이고요,");
+        alert("좋아하는 음식은 " + food + "예요!");
+        alert("제일 좋아하는 게임은 " + game + "입니다!");
+    }
+</script>
+<button onclick="introduce()">내 정보 보기</button>
+
+<script>
+function introduce() {
+    let name = "한다인";
+    let hobby = "게임 만들기";
+    let animal = "고양이";
+
+    alert("안녕하세요! 저는 " + name + "입니다.");
+    alert("취미는 " + hobby + "이고, 좋아하는 동물은 " + animal + "예요!");
+}
+</script>
+<p>나이 입력: <input id="myAge" type="number"></p>
+<button onclick="checkAge()">나이 확인</button>
+
+<script>
+function checkAge() {
+    let age = document.getElementById("myAge").value;
+
+    if (age >= 20) {
+        alert("성인이에요!");
+    } else {
+        alert("청소년이에요!");
+    }
+}
+</script>
+<script>
+    let name = "한다인";
+    for (let i = 0; i < 3; i++) {
+        alert(name + "님, 환영합니다! (" + (i+1) + ")");
+    }
+</script>
+<p>좋아하는 음식 입력: <input id="myFood" type="text"></p>
+<button onclick="checkFood()">입력!</button>
+
+<script>
+function checkFood() {
+    let food = document.getElementById("myFood").value;
+
+    if (food === "떡볶이") {
+        alert("저도 떡볶이 좋아해요!");
+    } else {
+        alert("오~ " + food + "도 맛있죠!");
+    }}
+</script>
+<script>
+    let games = ["마인크래프트", "로블록스", "포트나이트"];
+    for (let i = 0; i < games.length; i++) {
+        alert("제가 좋아하는 게임: " + games[i]);
+    }
+</script>
+<button onclick="greetFriend()">친구에게 인사</button>
+<button onclick="greetTeacher()">선생님에게 인사</button>
+
+<script>
+    function greetFriend() {
+        alert("안녕! 오늘 점심 뭐 먹었어?");
+    }
+
+    function greetTeacher() {
+        alert("안녕하세요, 선생님!");
+    }
+</script>
+<button onclick="showLikes()">내가 좋아하는 것</button>
+
+<script>
+function showLikes() {
+    alert("음식: 떡볶이");
+    alert("게임: 마인크래프트");
+    alert("동물: 고양이");
+}
+</script> 
+<div class="intro-box">
+  <h1>나의 소개</h1>
+  <p>이름: 이코딩</p>
+</div>
+
+<div class="like-box">
+  <h2>내가 좋아하는 것</h2>
+  <p>취미: 프로그래밍</p>
+</div>
